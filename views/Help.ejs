@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">YSR BANK</a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="menu.svg" alt="open navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="menu.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li><a href="/">Home page</a></li>
+                    <li><a href="Accounts.ejs">Accounts</a></li>
+                    <li><a href="payment.ejs">payment</a></li>
+                    <li><a href="History.ejs">History</a></li>
+                    
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="current"><a href="Help.ejs">Help</a></li>
+                    <li><a href="Notifications.ejs">Notifications</a></li>
+                    
+                </ul>
+                
+            </nav>
+        </div>
+    </div>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () =>{
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () =>{
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+    <section class="queries">
+        <div class="faq">
+            <h3>Q) what happens if money is not added in account after the transaction?</h1>
+            <p>A) If money is not added after 48hr from the transation you call to our customer care number.</p>
+            <h4>Q) How to apply for a New bank account?</h4>
+            <p>A) You can call to our customer service, they will help you.</p>
+            
+        </div>
+
+        <div class="contact">
+            <h5>contact us at</h5>
+            <p>customer care: 1800278278 or 1800279279</p>
+        </div>
+</body>
+</html>
